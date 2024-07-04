@@ -1,0 +1,1 @@
+cmd /k "D:\tugaskasrin\myenv\Scripts\activate.bat"

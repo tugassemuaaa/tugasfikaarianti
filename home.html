@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    Halaman Home
+     {% include "daftar.html" %}
+   <h2>HALAMAN HOME</h2>
+   <form method="post">
+        <h2>Enjoy with 
+            Cake
+            Choose Your Favorite</h2>
+        <h3>Welcome to Fauziah Cake Shop. Menu yang
+            menawarkan variasi pesanan dengan rasa - rasa 
+            menarik membuat anda ingin kembali lagi
+        </h3>
+        <button type="submit">Lihat Menu</button>
+   </form>
+</body>
+</html>

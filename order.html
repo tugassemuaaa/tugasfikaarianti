@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    Halaman Order
+    {% include "Daftar.html" %}
+    <h2>Isi Data Untuk Mengorder</h2>
+    <form method="post">
+    <h2><input type="text" name="nama" id="nama" placeholder="nama">
+    <input type="text" name="alamat" id="alamat" placeholder="alamat"></h2>
+        
+    <h3><input type="kota" name="kota" id="kota" placeholder="kota">
+    <input type="text" name="kecamatan" id="kecamatan" placeholder="kecamatan"></h3>
+    <h4><input type="text" name="no_telepon" id="no_telepon" placeholder="no_telepon">
+
+    <select type="text" name="metode_pembayaran" id="metode_pembayaran" placeholder="metode_pembayaran">
+              <option value="kartu_kredit">Kartu Kredit</option>
+              <option value="e_wallet">E-Wallet</option>
+    <optgroup label="Transfer Bank">
+              <option value="bca">BCA</option>
+              <option value="mandiri">Mandiri</option>
+              <option value="bni">BNI</option>
+          </optgroup>
+      </select>
+            
+       <h3> <button type="submit" name="action" value="order now">Order Now</button>
+        <button type="submit" name="action" value="batal">Batal</button></h3>
+    </form>
+    </body>
+    </html>

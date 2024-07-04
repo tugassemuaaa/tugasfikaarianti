@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online shop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    Halaman Menu
+    {% include "daftar.html" %}
+    <h2>Pilih Menu</h2>
+    <form method = post>
+    <div>
+            
+    <h3>1 Dessert Oreo</h3>
+    <img src="{{ url_for('static', filename='gambar/Dessert Oreo.jpg') }}"
+         alt="Dessert Oreo" style="width: 150px; height: 150px;">
+    </div>
+        
+    <div>
+    <h3>2 Redvelvet Cake</h3>
+    <img src="{{ url_for('static', filename='gambar/Redvelvet Cake.jpg') }}"
+         alt="Redvelvet Cake" style="width: 150px; height: 150px;">
+    </div>
+    <div>
+    <h3>3 Whole Cake</h3>
+    <img src="{{ url_for('static', filename='gambar/Whole Cake.jpg') }}"
+         alt="Whole Cake" style="width: 150px; height: 150px;">
+    </div>
+             
+    <input type="text" name="namakue" id="namakue" placeholder="namakue">
+    <button type="submit">Order</button>
+    </form>
+</body>
+</html>
